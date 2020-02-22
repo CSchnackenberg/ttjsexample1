@@ -1,0 +1,55 @@
+<!--
+ * TouchThing Js (TTjs) - JavaScript Entity/Component Game Framework
+ *
+ * Copyright (c) 2020, Christoph Schnackenberg <bluechs@gmx.de>
+ *
+ * Released under the MIT license
+ * https://github.com/CSchnackenberg/TTjs/blob/develop/LICENSE
+ *
+ * Index file using packed result
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TTjs example</title>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com http://monworks.dyndns.org:9900/api/notify 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content: *;">
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+        <link href="web/page.css" rel="stylesheet" type="text/css">
+        <link href="web/game.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div id="content">
+            <canvas id="gfx" width="400" height="300"></canvas>
+        </div>
+        <div id="head"></div>
+        <div id='gui'></div>
+
+        <div class="copyrights">
+            <div>
+                Background tileset: CC-BY-SA 3.0 - Zabin, Daneeklu, Jetrel, Hyptosis, Redshrike, Bertram. <a href="http://opengameart.org/content/rpg-tiles-cobble-stone-paths-town-objects">http://opengameart.org/content/rpg-tiles-cobble-stone-paths-town-objects</a>
+            </div>
+            <div>
+                Sprite Animals: (GPL2+ / CC-BY) Daniel Eddeland - <a href="https://opengameart.org/content/lpc-style-farm-animals">https://opengameart.org/content/lpc-style-farm-animals</a>
+            </div>
+        </div>
+
+        <script src="require.js"></script>
+        <script src="game.js"></script>
+        <script  type="text/javascript">
+
+            require(['main', 'jquery'], function(main, $) {
+                $.getJSON('version.json')
+                    .done(version => {
+                        main(version);
+                    })
+                    .fail(() => {
+                        main();
+                    });
+            });
+
+
+        </script>
+    </body>
+</html>

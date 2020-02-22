@@ -1,0 +1,75 @@
+/**
+ * Per default we want everything pixel.
+ */
+canvas, img {
+    image-rendering: optimizeSpeed;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: optimize-contrast;
+    image-rendering: pixelated;
+    display: block;
+}
+
+
+/**
+ * For normal images we need to set this
+ */
+img.filter {
+    image-rendering: auto;
+}
+
+
+.gameHtmlScreen {
+    position: fixed;
+    margin: 0;
+    padding: 20px;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    overflow-y: scroll;
+
+    transition: all 0.3s ease;
+}
+
+.openSourceWindow {
+    background-color: #302e5e;
+    color: #8d8ca7;
+}
+
+.openSourceWindow h3 {
+    color: #fff;
+}
+
+.gameHtmlScreenHidden {
+    display: none;
+}
+
+.anyLink {
+    color: #c1c0de;
+}
+
+.gameHtmlScreenClose
+{
+    position: fixed;
+    right: 20px;
+    top: 30px;
+
+    display:block;
+    box-sizing:border-box;
+    width:30px;
+    height:30px;
+    border-width:3px;
+    border-style: solid;
+    border-color: #fcdc83;
+    border-radius: 3px;
+    background: -webkit-linear-gradient(-45deg, transparent 0%, transparent 46%, white 46%,  white 56%,transparent 56%, transparent 100%), -webkit-linear-gradient(45deg, transparent 0%, transparent 46%, white 46%,  white 56%,transparent 56%, transparent 100%);
+    background-color: #fcdc83;
+    box-shadow:0px 5px 0px 0px #dba50f;
+    transition: all 0.3s ease;
+}
+
+.gameHtmlScreen .creditsLogo img {
+  margin-left: auto;
+  margin-right: auto;
+}

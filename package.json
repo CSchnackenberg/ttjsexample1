@@ -1,0 +1,37 @@
+{
+  "name": "de.xtoff.ttjsdemo1",
+  "displayName": "TTjs-Demo1",
+  "version": "1.0.0",
+  "description": "TTjs",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "serve",
+    "build-dev": "gulp build",
+    "build": "gulp build --prod"
+  },
+  "author": "xtoff's gamesstuff",
+  "license": "MIT - (C) Christoph Schnackenberg 2020",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-loader": "^8.0.6",
+    "amd-loader": "^0.0.8",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-run": "^1.7.1",
+    "gulp-run-command": "^0.0.9",
+    "yargs": "^14.0.0",
+    "gulp-if": "^3.0.0",
+    "delete": "^1.1.0",
+    "xml2js": "^0.4.22",
+    "git-rev-sync": "^1.12.0",
+    "gulp-rename": "^1.4.0",
+    "assert": "^2.0.0",
+    "serve": "^11.3.0"
+  }
+}

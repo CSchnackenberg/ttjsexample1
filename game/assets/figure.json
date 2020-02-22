@@ -1,0 +1,43 @@
+{
+	"images": [
+    "game/assets/cow_walk.png",
+    "game/assets/cow_shadow.png"
+  ],
+	"frames": {
+		"width": 128,
+		"height": 128,
+		"regX": 64,
+		"regY": 64
+	},
+	"animations": {
+		
+		"shadow": 17,
+		
+		"idle_1": 5,
+    "idle_2": 9,
+    "idle_3": 13,
+    "idle_4": 7,
+		"idle_6": 13,
+    "idle_7": 5,
+    "idle_8": 1,
+    "idle_9": 13,
+
+    "walk_1": [4, 7, "walk_1", 0.25],
+    "walk_2": [8, 11, "walk_2", 0.25],
+    "walk_3": [12, 15, "walk_3", 0.25],
+    "walk_4": [4, 7, "walk_4", 0.25],
+		"walk_6": [12, 15, "walk_6", 0.25],
+    "walk_7": [4, 7, "walk_7", 0.25],
+    "walk_8": [0, 3, "walk_8", 0.25],
+    "walk_9": [12, 15, "walk_9", 0.25],
+
+    "run_1": [4, 7, "walk_1", 0.25],
+    "run_2": [8, 11, "walk_2", 0.25],
+    "run_3": [12, 15, "walk_3", 0.25],
+    "run_4": [4, 7, "walk_4", 0.25],
+    "run_6": [12, 15, "walk_6", 0.25],
+    "run_7": [0, 3, "walk_7", 0.25],
+    "run_8": [0, 3, "walk_8", 0.25],
+    "run_9": [0, 3, "walk_9", 0.25]
+  }
+}

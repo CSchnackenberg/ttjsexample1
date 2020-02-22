@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background: #2d2d2d;
+    padding: 0;
+    margin: 0;
+}
+
+#content {
+  /*
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    */
+}
+
+#content #gfx {
+    /*background: #1E1C30;*/
+    margin-left: auto;
+    margin-right: auto;
+    /*height: 100%;*/
+    /*width:  100%;*/
+}
+
+.copyrights {
+  color: #a09f91;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Avenir Next Condensed";
+  font-weight: normal;
+  text-align: center;
+}
+
+.copyrights > div {
+  margin-top: 15px;
+}
+
+.copyrights span {
+  display: block;
+}
+
+.copyrights a {
+  color: #ff6172;
+  text-decoration: none;
+  font-family: Verdana;
+}

@@ -14,9 +14,13 @@ TTjs is linked as a submodule. Make sure that you pulled that properly.
   - **build/pack using** 
     - `npm run build-dev` 
     - `npm run build`
-    - In both cases you find the packed and babled version of the game in `www/**`.  
+    - In both cases you find the packed and babled version of the game in `www/**`.
+  - **change the map**
+    - install TILED mal editor
+    - edit `game/assets/map1.json`
+    - refresh browser   
 
-# Used art/attribution
+# Art attribution
 
   - Background tileset graphics: CC-BY-SA 3.0 - Zabin, Daneeklu, Jetrel, Hyptosis, Redshrike, Bertram. [http://opengameart.org/content/rpg-tiles-cobble-stone-paths-town-objects](http://opengameart.org/content/rpg-tiles-cobble-stone-paths-town-objects)
   - Animals sprite graphics: (GPL2+ / CC-BY) Daniel Eddeland - https://opengameart.org/content/lpc-style-farm-animals 

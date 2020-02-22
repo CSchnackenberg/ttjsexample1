@@ -1,0 +1,82 @@
+<!--
+ * TouchThing Js (TTjs) - JavaScript Entity/Component Game Framework
+ *
+ * Copyright (c) 2020, Christoph Schnackenberg <bluechs@gmx.de>
+ *
+ * Released under the MIT license
+ * https://github.com/CSchnackenberg/TTjs/blob/develop/LICENSE
+ *
+ * Index file during development
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TTjs example</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+        <link href="web/page.css" rel="stylesheet" type="text/css">
+        <link href="web/game.css" rel="stylesheet" type="text/css">
+        <script src="TTjs/src/ttjs/lib/require.js"></script>
+        <script type="text/javascript">
+
+            const ttjsRoot = "TTjs/src/ttjs";
+            require.config({
+                baseUrl: "./",
+                paths: {
+                    ttjs: ttjsRoot,
+                    jquery: ttjsRoot + '/lib/jquery-1.9.1',
+                },
+                //urlArgs: "bust=" + (new Date()).getTime(),
+                waitSeconds: 15
+            });
+
+            require.onError = function (err) {
+                if (err.requireType === 'timeout') {
+                    console.error('Timeout loading scripts:', err.requireModules);
+                }
+                else if (err.requireType === "scripterror") {
+                    console.error('Error loading scripts:', err.requireModules);
+                }
+                else {
+                    console.error(err.requireType, err.requireModules);
+                }
+            };
+
+            require(['main', 'jquery'], function(main, $) {
+
+                $.getJSON('version.json')
+                .done(version => {
+                    main(version);
+                })
+                .fail(() => {
+                    main();
+                });
+            });
+
+        </script>    
+    </head>
+    <body>
+        <div class="copyrights">
+            <div>
+                <span>TTjs Example 1</span>
+            </div>
+        </div>
+        <div id="content">
+            <canvas id="gfx" width="400" height="300"></canvas>
+        </div>
+        <div id="head"></div>          
+        <div id='gui'></div>
+
+        <div class="copyrights">
+            <div>
+                <span>Made with TouchThing js - Source Code</span><a target="_blank" href="https://github.com/CSchnackenberg/ttjsexample1">GitHub (TTjs)</a>
+            </div>
+            <div>
+                <span>Background tileset: CC-BY-SA 3.0 - Zabin, Daneeklu, Jetrel, Hyptosis, Redshrike, Bertram.</span><a target="_blank" href="http://opengameart.org/content/rpg-tiles-cobble-stone-paths-town-objects">http://opengameart.org/content/rpg-tiles-cobble-stone-paths-town-objects</a>
+            </div>
+            <div>
+                <span>Sprite Animals: (GPL2+ / CC-BY) Daniel Eddeland </span><a target="_blank" href="https://opengameart.org/content/lpc-style-farm-animals">https://opengameart.org/content/lpc-style-farm-animals</a>
+            </div>
+        </div>
+    </body>
+</html>

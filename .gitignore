@@ -8,4 +8,5 @@ built
 # for now
 /platforms
 /plugins
-/editor/section_images/*.png
+_game/
+www/
