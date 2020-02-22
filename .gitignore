@@ -1,0 +1,11 @@
+built
+.c9revisions
+.idea/
+*.iml
+/node_modules
+/dist
+
+# for now
+/platforms
+/plugins
+/editor/section_images/*.png
