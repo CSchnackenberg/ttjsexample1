@@ -16,7 +16,7 @@ TTjs is linked as a submodule. Make sure that you pulled that properly.
     - `npm run build`
     - In both cases you find the packed and babled version of the game in `www/**`.
   - **change the map**
-    - install TILED mal editor
+    - install Tiled map editor
     - edit `game/assets/map1.json`
     - refresh browser   
 
